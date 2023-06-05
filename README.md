@@ -1,6 +1,6 @@
-<img alt="CryptoPayApi" src="images/crypto.jpg"/>
+# Copyright @ ST Technologies
 
-# klev-o/crypto-pay-api
+<img alt="CryptoPayApi" src="images/crypto.jpg"/>
 
 Simple and convenient implementation Crypto Pay API with php version ^7.4 support. Based on the [Official Crypto Pay Api](https://help.crypt.bot/crypto-pay-api)
 
@@ -196,7 +196,6 @@ class InvoicePaidListener
     {
         $this->log->info('payload', (array)$update);
     }
-
 }
 
 //Now the event subscription looks more concise
@@ -204,22 +203,6 @@ $api->on(PaidType::INVOICE_PAID, $container->get(InvoicePaidListener::class));
 
 $api->getWebhookUpdates();
 ```
-
 You can use your dependency injection container to pipe all the necessary functionality from your code into handlers
 
-## 🎁Dontations
 
-Support the project if you like it. Funds will go towards food.
-
-| Network                     | Currency          | Wallet                                                                                                                             |
-|-----------------------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| Bitcoin                     | `BTC`             | `1M1qhSE6sN34a4d7ZtCh6y17Vf3LtdoW62`<br/>or<br/>`14cvXywCMucKMhFYDCbmQ1ZHhayDgbD65R`                                               |
-| The Open Network            | `TON`             | `EQAYZK8rWrS9Fhojdc486BpplDmTSLHum440f-L2--SA2Oid` <br/> or<br/> `ton://transfer/UQBVsumSIvsq4PfeFMhxSV9m_zPB31cHJX4X2lAVh9BUJXm3` |
-| Binance Smart Chain – BEP20 | `BNB, BUSD, USDT` | `0x674B09Ab418bb41C075847bde004bb7F492c2121`                                                                                       |
-
-## 🧨Troubleshooting
-
-Please, if you find any errors or not exactly - report this [problem page](https://github.com/klev-o/crypto-pay-api/issues)
-
-## And finally...
-Happy botting 🤖
