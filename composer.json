@@ -1,0 +1,30 @@
+{
+  "name": "klev-o/crypto-pay-api",
+  "description": "Simple and convenient implementation of the Crypto Pay payment system (@CryptoBot)",
+  "type": "library",
+  "keywords": ["cryptopay", "api", "telegram", "crypto", "bot", "php"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Konstantin Lev",
+      "email": "levachin.konstantin@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4.0",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "guzzlehttp/guzzle": "^7.2",
+    "psr/http-client": "^1.0",
+    "psr/http-message": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Klev\\CryptoPayApi\\": "src/"
+    }
+  },
+  "require-dev": {
+    "monolog/monolog": "^3.3",
+    "php-di/php-di": "^7.0"
+  }
+}
